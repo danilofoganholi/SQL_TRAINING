@@ -4,7 +4,7 @@ CREATE TABLE TabelaDep
 	COD_DEPTO INT IDENTITY,
 	DEPTO VARCHAR(30) NOT NULL,
 
-	--definindo chave primária
+	--definindo chave primÃ¡ria
 	CONSTRAINT PK_TabelaDep PRIMARY KEY (COD_DEPTO)
 	);
 
@@ -15,7 +15,7 @@ CREATE TABLE TabelaCar
 	CARGO VARCHAR(50) NOT NULL,
 	SALARIO_INIC NUMERIC (10,2) NOT NULL,
 
-	--definindo chave primária
+	--definindo chave primÃ¡ria
 	CONSTRAINT PK_TabelaCar PRIMARY KEY (COD_CARGO)
 	);
 
@@ -33,7 +33,7 @@ CREATE TABLE Empregados
 	SINDICALIZADO BIT NOT NULL,
 	OBS VARCHAR(50),
 	
-	--definindo chave primária
+	--definindo chave primÃ¡ria
 	CONSTRAINT PK_EMPREGADOS PRIMARY KEY (CODFUN),
 
 	--definindo chave estrangeira 
@@ -55,7 +55,7 @@ CREATE TABLE Dependentes
 	NOME VARCHAR(50) NOT NULL,
 	DATA_NASCIMENTO DATE NOT NULL,
 	
-	--definindo chave primária
+	--definindo chave primÃ¡ria
 	CONSTRAINT PK_Dependentes PRIMARY KEY (CODDEP, CODFUN),
 
 	--definindo chave estrangeira 
